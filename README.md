@@ -1,4 +1,4 @@
-# skilled-AI-agent-
+Markdown
 # 🤖 AgentName: Autonomous [Domain] AI Agent
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
@@ -21,3 +21,42 @@
 ---
 
 ## 🏗️ Architecture Overview
+
+                    ┌──────────────────┐
+                    │   User Prompt    │
+                    └────────┬─────────┘
+                             │
+                             ▼
+┌─────────────────────────────────────────────────────────────────┐
+│                          AGENT CORE                             │
+│                                                                 │
+│   ┌────────────────┐   ┌──────────────────┐   ┌─────────────┐   │
+│   │   Planner      │   │ Long/Short-Term  │   │  Execution  │   │
+│   │   (LLM Engine) │ ◄─┤ Memory (Vector)  ├─► │  Supervisor │   │
+│   └───────┬────────┘   └──────────────────┘   └──────┬──────┘   │
+└───────────┼──────────────────────────────────────────┼──────────┘
+│                                          │
+▼                                          ▼
+┌───────────────────────┐                  ┌──────────────────────┐
+│     Tools Suite       │                  │  HITL Safety Gate    │
+│ (Web, Code, API, DB)  │                  │  (Approval Request)  │
+└───────────────────────┘                  └──────────────────────┘
+
+---
+
+## 🚀 Quick Start
+
+### Prerequisites
+
+- Python 3.11 or higher
+- An API key for your LLM provider (e.g., OpenAI, Anthropic, Gemini)
+
+### Installation
+
+1. **Clone the repository:**
+   ```bash
+   git clone [https://github.com/your-username/agent-name.git](https://github.com/your-username/agent-name.git)
+   cd agent-name
+
+
+
